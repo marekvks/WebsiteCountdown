@@ -1,0 +1,78 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1A1A1D;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 100;
+    font-size: 45px;
+    text-align: center;
+    -webkit-text-stroke: 1px #C3073F;
+    -webkit-text-fill-color: #1A1A1D;
+}
+
+h1:before {
+    content: "marekvks.software";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    -webkit-text-stroke: 0vw #1A1A1D;
+    -webkit-text-fill-color: #C3073F;
+    border-right: 2px solid #C3073F;
+    overflow: hidden;
+    animation: show 4s ease infinite, flick .8s ease infinite;
+}
+
+@keyframes show {
+    0% { width: 0; }
+    70% { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes flick {
+    0% { border-right: 2px solid #C3073F; }
+    50% { border: 0px; }
+    100% { border-right: 2px solid #C3073F; }
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: #C3073F;
+    text-shadow: 1px 1px 4px #111;
+}
+
+a {
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 12px 32px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #C3073F;
+    border: 2px solid #C3073F;
+    border-radius: 50px;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    border-color: #950740;
+    color: #950740;
+}
