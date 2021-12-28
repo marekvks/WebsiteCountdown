@@ -8,4 +8,4 @@ var x = setTimeout(function () {
     var days = Math.ceil(distance / (1000 * 60 * 60 * 24));
 
     document.getElementById("time").innerHTML = days;
-}, 1000);
+}, 0);
